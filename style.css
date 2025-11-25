@@ -6,11 +6,12 @@
 
 body {
     color: #007E6E;
+    font-weight: bold;
 }
 
 .form {
     background-color: #E7DEAF;
-    height: 500px;
+    height: 400px;
     width: 500px;
     margin: 100px;
     padding: 50px;
@@ -53,7 +54,19 @@ body {
     width: 150px;
 }
 
+
 .passwords {
     flex-direction: column;
     gap: 20px;
+}
+
+.form div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+span {
+    color: red;
+    font-weight: normal;
 }

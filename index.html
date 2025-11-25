@@ -10,25 +10,38 @@
     <form novalidate class="form" action="">
         <div class="email">
             <label for="email">Email *</label>
-            <input type="email" required id="email">
+            <div>
+                <input type="email" required id="email">
+                <span id="email-validate"></span>
+            </div>
         </div>
         <div class="country">
             <label for="country">Country *</label>
-            <input type="text" required id="country">
-        </div>
-        <div class="passwords">
             <div>
-                <label for="password" id="password">Password *</label>
-                <input required type="password" id="password">
+                <input type="text" required id="country">
+                <span id="country-validate"></span>
             </div>
-            <div >
-                <label for="password-confirm">Confirm Password *</label>
+        </div>
+        <div>
+            <label for="password" id="password">Password *</label>
+            <div>
+                <input required type="password" id="password">
+                <span id="password-validate"></span>
+            </div>
+        </div>
+        <div >
+            <label for="password-confirm">Confirm Password *</label>
+            <div>
                 <input required type="password" name="password-confirm" id="password-confirm">
+                <span id="password-confirm-validate"></span>
             </div>
         </div>
         <div>
             <button type="submit">Submit</button>
         </div>
     </form>
+
+
+    <script src="./index.js"></script>
 </body>
 </html>
